@@ -8,13 +8,16 @@ import "./style/achievements.css";
 
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
+import { ImageUrlProvider } from "./pages/Photos";
 import { BrowserRouter } from "react-router-dom";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <BrowserRouter>
     <React.StrictMode>
-      <App />
+      <ImageUrlProvider>
+        <App />
+      </ImageUrlProvider>
     </React.StrictMode>
   </BrowserRouter>
 );
