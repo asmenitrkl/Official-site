@@ -6,6 +6,7 @@ import { GrNext } from "react-icons/gr";
 import { GrPrevious } from "react-icons/gr";
 import "../style/gallery.css";
 import Masonry, { ResponsiveMasonry } from "react-responsive-masonry";
+import { useImageUrls } from "./Photos";
 
 const Gallery = () => {
   const [loading, setLoading] = useState(true);
@@ -14,20 +15,12 @@ const Gallery = () => {
   const [isNext, setIsNext] = useState(false);
   const [data, setData] = useState({ img: "", i: 0 });
 
-  const importAll = (r) => r.keys().map(r);
-
-  const [images, setImages] = useState(
-    importAll(require.context("../assets/gallery", false, /\.(png|jpe?g|svg)$/))
-  );
-
+  const imageUrls = useImageUrls();
+  const [images, setImages] = useState([]);
+  
   useEffect(() => {
-    const interval = setInterval(() => {
-      // Shuffle the images randomly
-      setImages([...images.sort(() => Math.random() - 0.5)]);
-    }, 250000);
-
-    return () => clearInterval(interval);
-  }, [images]);
+      setImages(imageUrls)
+  }, [imageUrls]);
 
   const imageSize = images.length;
 
@@ -195,6 +188,7 @@ const Gallery = () => {
                       }}
                       alt="gallery-images"
                       onClick={() => viewImage(image, i)}
+                      loading="lazy"
                     />
                   ))}
                 </Masonry>
