@@ -4,14 +4,14 @@ import { getStorage, ref, listAll, getDownloadURL } from 'firebase/storage';
 
 // Your Firebase configuration
 const firebaseConfig = {
-    apiKey: "AIzaSyChrJ2j0sZ8USjlGLMBSBUdOzL7LL14acQ",
-    authDomain: "asme-2d35e.firebaseapp.com",
-    projectId: "asme-2d35e",
-    storageBucket: "asme-2d35e.appspot.com",
-    messagingSenderId: "222893241660",
-    appId: "1:222893241660:web:aa120d6595578b38ef5a39",
-    measurementId: "G-HQQMEN55VS"
-  };
+  apiKey: "AIzaSyBo96tAMvDU1e03WaCngf_C1he1H3TNOvU",
+  authDomain: "asme-cc6da.firebaseapp.com",
+  projectId: "asme-cc6da",
+  storageBucket: "asme-cc6da.appspot.com",
+  messagingSenderId: "351027294964",
+  appId: "1:351027294964:web:8553c6b504018020f5a4a1",
+  measurementId: "G-8KRE26HXCR"
+};
 // Create a context for image URLs
 const ImageUrlContext = createContext();
 
