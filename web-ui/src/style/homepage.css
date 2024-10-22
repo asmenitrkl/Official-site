@@ -22,7 +22,7 @@ font-family: 'Roboto', sans-serif; */
 
 .page {
     position: relative;
-    background-color: black;
+    background-color: rgb(41, 41, 41);
 }
 
 .page::before {
@@ -93,7 +93,7 @@ font-family: 'Roboto', sans-serif; */
     }
 
     50% {
-        content: "WE MAKE HUMAN POWERED VEHICLES"
+        content: "SETTING THE STANDARD";
     }
 }
  
@@ -239,7 +239,7 @@ font-family: 'Roboto', sans-serif; */
     flex-direction: column;
     color: white;
     /* color: black; */
-     background-color: black;
+     background-color: rgb(11, 11, 11);
     /* height: 1; */
     align-items: center;
     /* font-family: 'Playfair Display', serif; */
@@ -249,7 +249,7 @@ font-family: 'Roboto', sans-serif; */
 
     content: "";
     /* background-image: url('https://i.postimg.cc/yYvjLYfz/2691.jpg'); */
-    background-image: url('https://i.postimg.cc/nzDX0W51/5447242.jpg');
+    /* background-image: url('https://i.postimg.cc/nzDX0W51/5447242.jpg'); */
     background-size: cover;
   
     background-position: center;
@@ -406,13 +406,13 @@ font-family: 'Roboto', sans-serif; */
     display: flex;
     align-items: center;
     flex-direction: column;
-    /* background-color: black; */
+    background-color: rgb(11, 11, 11);;
     color: white;
     padding: 4em 0px;
     content: "";
      
     /* background-image: url('https://i.postimg.cc/yYvjLYfz/2691.jpg'); */
-    background-image: url('https://i.postimg.cc/T1WmwcWP/25859.jpg');
+    /* background-image: url('https://i.postimg.cc/T1WmwcWP/25859.jpg'); */
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
