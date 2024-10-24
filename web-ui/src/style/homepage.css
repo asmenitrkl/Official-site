@@ -425,7 +425,7 @@ font-family: 'Roboto', sans-serif; */
 }
 
 .event-card {
-    box-shadow: 0 0px 5px 1px #ffc32b;
+    box-shadow: 0 0px 5px 1px #C7A17B;
     overflow: hidden;
     width: 25%;
     margin: 2em 2em;
@@ -443,7 +443,7 @@ font-family: 'Roboto', sans-serif; */
 }
 
 .events-decs {
-    background-color: rgb(151, 129, 3);
+    background-color: #A4703C;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -459,14 +459,15 @@ font-family: 'Roboto', sans-serif; */
 
 .events-btn button {
     padding: 0.5em 1em;
-    color: black;
-    background: linear-gradient(to right, rgb(184, 134, 11), rgb(250, 201, 76) );
+    color: white;
+    background: #884400;
     font-family: Arial, Helvetica, sans-serif;
+    transition: background 0.2s ease-in-out;
 }
 
 .events-btn button:hover {    
     color: black;
-    background: linear-gradient(to left, rgb(184, 134, 11), rgb(250, 201, 76) );    
+    background: #B2865B;
 }
 
 @media (min-width:750px) and (max-width: 1215px){
@@ -541,7 +542,7 @@ font-family: 'Roboto', sans-serif; */
 .acheivements-container {
     padding: 4em 0;
     height: 80vh;
-    background-color: black;
+    background-color: rgb(11, 11, 11);
      
     color: white;
     display: flex;
@@ -626,18 +627,19 @@ font-family: 'Roboto', sans-serif; */
     flex-direction: column;
     content: "";
     /* background-image: url('https://i.postimg.cc/MpHh8FRx/Designer-1.jpg'); */
-    background-image: url('https://i.postimg.cc/FzwQRkKV/3392075.jpg');
+    /* background-image: url('https://i.postimg.cc/FzwQRkKV/3392075.jpg'); */
+    background-color: rgb(11, 11, 11);
 
-    background-size: cover;
+    /* background-size: cover;
     background-position: center;
 
     background-repeat: no-repeat;
-    /* height: 150vh; */
+    /* height: 150vh; */ 
 
 
     /* background: linear-gradient(to right, whitesmoke, #ccc); */
     padding: 4em 0px;
-    background-color: white;
+    color: white;
 
 
 }
@@ -688,17 +690,17 @@ font-family: 'Roboto', sans-serif; */
     /* background-color: grey; */
     grid-column: span 4;
     /* Takes the width of 1 column */
-    background: linear-gradient(to bottom, rgb(23, 22, 22), #ccc);
-
-    color: white;
+    background: white;
+    color: black;
+    transition: padding 0.3s ease-in-out, background 0.3s ease-in-out; 
 }
 
 .small-width:hover {
     cursor: pointer;
     /* background-color: rgb(69, 68, 68); */
-    background: linear-gradient(to top, grey, white);
+    background: grey;
+    color: white;
 
-    color: black;
 
 }
 
@@ -734,15 +736,14 @@ font-family: 'Roboto', sans-serif; */
     flex-direction: column;
     align-items: center;
     padding: 4em 0;
-    background-image: url('https://i.postimg.cc/9XqJzP2T/green-smooth-wooden-textured-background.jpg');
+    /* background-image: url('https://i.postimg.cc/9XqJzP2T/green-smooth-wooden-textured-background.jpg');
     background-size: cover;
     background-position: center;
-    background-repeat: no-repeat;
+    background-repeat: no-repeat; */
 }
 
 .team-box {
-    /* background-color: black; */
-    background-image: linear-gradient(to right, #005e5e, #19a8b2);
+    background-image: linear-gradient(to right, #884400, #A4703C);
     
     color: black;
     display: flex;
@@ -752,7 +753,7 @@ font-family: 'Roboto', sans-serif; */
     justify-content: center;
     /* border: 2px solid red; */
     border-radius: 10px;
-    box-shadow: 0px 0px 5px 3px  #35e3e3;
+    box-shadow: 0px 0px 5px 3px  #E37F0C;
     overflow: hidden;
 }
 
@@ -785,25 +786,22 @@ font-family: 'Roboto', sans-serif; */
 
  
 .teams-btn button {
-    /* padding: 10px 30px; */
-    padding: 0.5vmax 1.5vmax;
-   
-    /* font-family: Arial, Helvetica, sans-serif; */
+    padding: 1vmax 2.5vmax; 
     font-size: small;
-    /* font-weight: bolder; */
+    font-weight: bolder;
     color: white;
-    background: linear-gradient(to right, black, grey);
+    background: black;
     border: none;
+    border-radius: 2rem;
+    transition: padding 0.3s ease-in-out, background 0.3s ease-in-out; 
 }
 
 .teams-btn button:hover {
+    padding: 1vmax 6vmax 1vmax 2.5vmax;
+    background: #C7A17B;
     color: black;
-
-    /* background: linear-gradient(to right, grey, rgb(255, 253, 253)); */
-    background: linear-gradient(to right, rgba(0, 255, 255, 0.507), rgb(3, 238, 255));
-    border: none;
-   
 }
+
 
 @media (max-width: 900px) {
     .team-container {
@@ -868,7 +866,7 @@ font-family: 'Roboto', sans-serif; */
 }
 .sponsors-content{
      
-    background: linear-gradient(to bottom, rgb(57, 56, 56), rgb(88, 88, 88));
+    background: grey;
     
     width: 85vw;
     margin: 40px 0px;
@@ -879,14 +877,14 @@ font-family: 'Roboto', sans-serif; */
     flex-wrap: wrap;
     align-items: center;    
     border-radius: 15px;
-    background: linear-gradient(to bottom, rgb(57, 56, 56), rgb(88, 88, 88));
     position: relative;
+    transition: transform 0.3s ease-in-out, background 0.3s ease-in-out; 
 }
 
  
 
 .sponsors-content:hover{
-    background: linear-gradient(rgba(44, 204, 232, 0.4) -6.4%, rgba(174, 174, 174, 0.15) 99.89%);
+    background: linear-gradient(to bottom, #884400, #C7A17B);
     transform: scale(1.03);
 }
 
