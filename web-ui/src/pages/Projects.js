@@ -31,7 +31,7 @@ const Projects = () => {
     },
     {
       id: "project4",
-      title: "OLD GUARD",
+      title: "MANAGEMENT",
       img: "https://i.postimg.cc/9f40LLYS/old-guard.jpg",
       description:
         "Engineers, like other professionals, need strong communication skills in both speaking and writing. The Oral Competition, supported by the ASME Old Guard Committee, underscores the importance of effective oral presentations. The committee's annual contributions and volunteer efforts drive this program, benefiting engineering students and early career professionals, ultimately enhancing the engineering profession.",

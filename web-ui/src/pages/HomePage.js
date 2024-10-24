@@ -50,8 +50,9 @@ const HomePage = ({ state, state2 }) => {
               </div>
             </div>
 
-            {/* ============================Announcement section======================  */}
-            <Announcement />
+            {/* ============================Announcement section====================== 
+            <Announcement /> */}
+            {/* commented the announcement section as it is not required for now */}
 
             {/* ============================Project Section====================== */}
             <ProjectCard />
