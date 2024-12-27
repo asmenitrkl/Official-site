@@ -31,22 +31,18 @@ const Footer = () => {
               />
             </div> */}
             <div className="footer-content mt-1 text-center">
-              <h4>ASME NITR Chapter</h4>
+              <h4>ASME NITR Student Section</h4>
               <p>Club Under Tehcnical Societyk, SAC NIT Rourkela</p>
 
-              <p>ME-112, Old Mechanical Building, NIT Rourkela</p>
+              <p>ME-112, Central Workshop, NIT Rourkela</p>
               <p>ODISHA, Pin-751003</p>
             </div>
           </div>
           <div className="footerdiv1-content2 col-lg-6 text-center">
             <h4>Connect Us!</h4>
-
-            <div>
-              <i class="bi bi-telephone"></i> (Phone) : +91 123456789 cd{" "}
-            </div>
             <div>
               <i class="bi bi-envelope-at"></i> (Email) :
-              asmenitrkl@nitrkl.ac.in
+              asmenitrkl@gmail.com
             </div>
           </div>
         </div>
