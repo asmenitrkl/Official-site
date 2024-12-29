@@ -1,13 +1,12 @@
 import React, { useState, useEffect } from "react";
 import Layout from "../components/Layouts/Layout";
-import { Link } from "react-router-dom";
 import Loader from "../components/Loader/Loader";
 
 const Team = () => {
   const data = [
     {
-      id: "id2023",
-      title: "2023",
+      id: "id2024",
+      title: "2024",
       teams: [
         {
           title: "Executive",
@@ -16,7 +15,6 @@ const Team = () => {
             {
               name: "Samidha",
               role: "Chairperson",
-
               img: "https://i.postimg.cc/tTxd4MJn/SAMIDHA.jpg",
               special: true,
             },
@@ -36,7 +34,6 @@ const Team = () => {
               name: "Udita Mishra",
               role: "Treasurer",
               special: true,
-
               img: "https://i.postimg.cc/qvfzFRvd/udita.jpg",
             },
           ],
@@ -200,7 +197,6 @@ const Team = () => {
         {
           title: "BluePrint",
           id: "Team4",
-
           members: [
             {
               name: "Ayan Kumar Rajak",
@@ -368,68 +364,6 @@ const Team = () => {
         },
       ],
     },
-    {
-      id: "id2022",
-      title: "2022",
-      teams: [
-        {
-          title: "Executive",
-          id: "Team1",
-
-          members: [
-            {
-              name: "Deepak Kumar Mohanty",
-              role: "Ex President",
-              img: "https://i.postimg.cc/j5FM095m/Deepak-Kumar-Mohanty.jpg",
-              special: true,
-            },
-            {
-              name: "Anisha Mohapatra",
-              role: "Ex Vice President",
-              img: "",
-              special: true,
-            },
-            {
-              name: "Sarthak Sahoo",
-              role: "Ex BS 10.0 Captain",
-              img: "",
-              special: true,
-            },
-            {
-              name: "Essa Ameen Baig",
-              role: "Ex Treasurer and Ex BP 1.0 Captain",
-              img: "",
-              special: true,
-            },
-            {
-              name: "Rahul Kumar Pandey",
-              role: "Ex BS 10.0 Vice-Captain",
-              img: "",
-              special: true,
-            },
-            {
-              name: "Manjit Kumar Sethi",
-              role: "Ex General Secretary",
-              img: "",
-              special: true,
-            },
-            {
-              name: "Devansh Saxena",
-              role: "Ex BP 1.0 Vice-Captain",
-              img: "",
-              special: true,
-            },
-          ],
-        },
-      ],
-    },
-  ];
-
-  const ach = [
-    {
-      id: "1",
-      title: "",
-    },
   ];
 
   const [loading, setLoading] = useState(true);
@@ -447,12 +381,10 @@ const Team = () => {
 
   const [clicked, setClicked] = useState(true);
   const [mainclicked, mainsetClicked] = useState(true);
-  const [titles, setTitles] = useState("2023");
 
-  const handleClick = (id, title) => {
+  const handleClick = (id) => {
     setClicked(!clicked);
     setToggled(id);
-    setTitles(title);
   };
 
   const mainhandleClick = (id) => {
@@ -465,153 +397,74 @@ const Team = () => {
       {loading ? (
         <Loader />
       ) : (
-        <>
-          <Layout isScrolled={isScrolled}>
-            <div className="team-main">
-              <h1>OUR MEMBERS</h1>
-              <div className="team-sidebar">
-                <div className="team-wrapper2">
-                  <div class="dropdown">
+        <Layout isScrolled={isScrolled}>
+          <div className="team-main">
+            <h1>OUR MEMBERS</h1>
+            <p>2024</p>
+            <div className="team-info">
+              <div className="team-info-content">
+                <div className="team-wrapper">
+                  {data.map(({ id, teams }) => (
                     <>
-                      <button
-                        class="btn btn-primary dropdown-toggle"
-                        type="button"
-                        data-bs-toggle="dropdown"
-                        aria-expanded="false"
-                        // key={toggled}
-                      >
-                        {titles}
-                      </button>
-                    </>
-
-                    <ul class="dropdown-menu">
-                      {data.map(({ title, id }) => {
-                        return (
-                          <>
-                            <li
+                      {toggled === id ? (
+                        <>
+                          {teams.map(({ title, id }) => (
+                            <div
                               key={id}
-                              className={`team-sidebar-btns ${
-                                toggled === id ? "clicked" : ""
+                              className={`team-btn ${
+                                maintoggled === id ? "mainclicked" : ""
                               }`}
-                              onClick={() => handleClick(id, title)}
+                              onClick={() => mainhandleClick(id)}
                             >
                               {title}
-                            </li>
-                          </>
-                        );
-                      })}
-                    </ul> 
-                  </div>
-                </div>
-              </div>
-              <div className="team-info">
-                <div className="team-info-content">
-                  <div className="team-wrapper">
-                    {data.map(({ id, teams }) => {
-                      return (
-                        <>
-                          {toggled === id ? (
-                            <>
-                              {teams.map(({ title, id }) => {
-                                return (
-                                  <div
-                                    key={id}
-                                    className={`team-btn ${
-                                      maintoggled === id ? "mainclicked" : ""
-                                    }`}
-                                    onClick={() => mainhandleClick(id)}
-                                  >
-                                    {title}
-                                  </div>
-                                );
-                              })}
-                            </>
-                          ) : null}
+                            </div>
+                          ))}
                         </>
-                      );
-                    })}
-                  </div>
-
-                  {data.map(({ id, teams }) => {
-                    return (
-                      <>
-                        {toggled === id ? (
-                          <div className="dummyclass">
-                            {teams.map(({ id, members }) => {
-                              return (
-                                <>
-                                  {maintoggled === id ? (
-                                    <div className="team-rows team-flow">
-                                      {members.map(
-                                        ({ name, role, img, special }) => {
-                                          return (
-                                            <>
-                                              <div className="team-row">
-                                                <div className="team-col">
-                                                  <div
-                                                    className={`${
-                                                      special
-                                                        ? "special-member-card"
-                                                        : "team-card"
-                                                    }`}
-                                                  >
-                                                    <div className="teamContent-img">
-                                                      <img
-                                                        src={img}
-                                                        alt="team-img"
-                                                      />
-                                                    </div>
-
-                                                    <h3>{name}</h3>
-                                                    <p>{role}</p>
-                                                    {/* <ul className="team-icon">
-                                                      <li>
-                                                        <Link
-                                                          to="#"
-                                                          className="card-link"
-                                                        >
-                                                          <ion-icon name="logo-twitter"></ion-icon>
-                                                        </Link>
-                                                      </li>
-                                                      <li>
-                                                        <Link
-                                                          to="#"
-                                                          className="card-link"
-                                                        >
-                                                          <ion-icon name="logo-instagram"></ion-icon>
-                                                        </Link>
-                                                      </li>
-                                                      <li>
-                                                        <Link
-                                                          to="#"
-                                                          className="card-link"
-                                                        >
-                                                          <ion-icon name="logo-linkedIn"></ion-icon>
-                                                        </Link>
-                                                      </li>
-                                                    </ul> */}
-                                                  </div>
-                                                </div>
-                                              </div>
-                                            </>
-                                          );
-                                        }
-                                      )}
-                                    </div>
-                                  ) : null}
-                                </>
-                              );
-                            })}
-                          </div>
-                        ) : null}
-                      </>
-                    );
-                  })}
+                      ) : null}
+                    </>
+                  ))}
                 </div>
+
+                {data.map(({ id, teams }) => (
+                  <>
+                    {toggled === id ? (
+                      <div className="dummyclass">
+                        {teams.map(({ id, members }) => (
+                          <>
+                            {maintoggled === id ? (
+                              <div className="team-rows team-flow">
+                                {members.map(({ name, role, img, special }) => (
+                                  <div className="team-row">
+                                    <div className="team-col">
+                                      <div
+                                        className={`${
+                                          special
+                                            ? "special-member-card"
+                                            : "team-card"
+                                        }`}
+                                      >
+                                        <div className="teamContent-img">
+                                          <img src={img} alt="team-img" />
+                                        </div>
+
+                                        <h3>{name}</h3>
+                                        <p>{role}</p>
+                                      </div>
+                                    </div>
+                                  </div>
+                                ))}
+                              </div>
+                            ) : null}
+                          </>
+                        ))}
+                      </div>
+                    ) : null}
+                  </>
+                ))}
               </div>
             </div>
-          </Layout>
-        </>
+          </div>
+        </Layout>
       )}
     </>
   );

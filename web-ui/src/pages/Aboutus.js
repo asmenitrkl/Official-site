@@ -33,25 +33,7 @@ const Aboutus = () => {
             <div className="bg">
               <div className="aboutUsContent">
                 <p>
-                  ASME NITR Chapter stands out as one of the most active
-                  technical society in the eastern zone of India. The ASME NIT
-                  Rourkela Chapter is a student chapter of the American Society
-                  of Mechanical Engineers (ASME) International, located in the
-                  National Institute of Technology, Rourkela, India. The chapter
-                  was established in 2012 by the students of the 2010 batch. The
-                  chapter aims to promote the science and practice of mechanical
-                  engineering among students by organizing seminars, training
-                  workshops, and awarding prizes. The chapter has been actively
-                  participating in various technical events and competitions.
-                  The chapter is one of the most prominent, active, and dynamic
-                  student sections of ASME International. As a student
-                  organization on campus, our goal is to provide a place for
-                  both networking and information, offering guest speakers,
-                  workshops and more. Its vision is to become a premier
-                  institution for promoting art, science and the practice of
-                  mechanical and multi- disciplinary engineering and the allied
-                  sciences to our diverse communities and opening up new
-                  horizons for the students to stand out globally.
+                ASME (American Society of Mechanical Engineers) NIT Rourkela Student Section is an enthusiastic community of 55+ members, with our mission to empower engineers for success in the fast-paced growing industry through comprehensive professional and personal development opportunities like ASME E-Fests. ASME NIT Rourkela offers a wide range of valuable resources tailored to support our members on their engineering journey. We organize and contest in exciting competitions, provide workshop programs and deliver technical skills training to enhance our members' capabilities. At ASME NIT Rourkela, our primary goal is to provide members with valuable industry experience by facilitating professional connections and collaborations with a diverse range of sponsoring companies. Through engaging workshops and partnership tech events, we connect our members with industrial opportunities, bridging the gap between academia and industry. We would also like to honour our section's faculty advisor Dr. Suman Ghosh for fostering an interactive culture within the community. As our organization has a rich legacy since 2014 on campus, ASME NIT Rourkela is dedicated to transforming students from all walks of life into exceptional engineers, fostering individual innovation and collaboration. Join us as we shape the future of engineering at NIT Rourkela and beyond.
                 </p>
               </div>
               {/* <div className="right_content">
