@@ -19,7 +19,7 @@ const Intro = () => {
       <div className="introPage">
         <div className="intro-img">
           <h1>ASME</h1>
-          <h5>NIT Rourkela Chapter</h5>
+          <h5>NIT Rourkela Student Section</h5>
         </div>
       </div>
       {/* </div> */}

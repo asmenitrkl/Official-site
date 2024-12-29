@@ -1,0 +1,21 @@
+
+:root {
+    --color-white: #faf3e0; /* Softer Cream */
+    --color-black: #0a1624; /* Rich Deep Blue-Black */
+    --color-dark-blue: #0d2438; /* Deep Midnight Blue */
+    --color-light-blue: #709fb0; /* Calm Sky Blue */
+    --color-gradient-start: #0c1d2b; /* Original Deep Blue Start */
+    --color-gradient-end: #709fb0; /* Calm Sky Blue End */
+    --color-special-gradient-start: #0a1624; /* Deep Black-Blue Start */
+    --color-special-gradient-end: #faf3e0; /* Softer Cream End */
+    --color-background: #102a3f; /* Balanced Blue for Backgrounds */
+    --color-hover: #ffe4ba; /* Warm Pale Cream for Hover */
+    --color-text: #e1e7ec; /* Light Cool Gray for Readability */
+    --color-box-shadow: rgba(12, 29, 43, 0.4); /* Subtle Blue Shadow */
+    --color-special-box-shadow: rgba(250, 243, 224, 0.5); /* Gentle Glow for Cream Shadows */
+}
+
+
+
+
+

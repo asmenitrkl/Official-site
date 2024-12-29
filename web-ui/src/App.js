@@ -1,6 +1,6 @@
 import "./App.css";
 import HomePage from "./pages/HomePage";
-// import Aboutus from "./pages/Aboutus";
+import Aboutus from "./pages/Aboutus";
 import All from "./pages/All.js";
 import { Routes, Route } from "react-router-dom";
 import Pagenotfound from "./pages/Pagenotfound";
@@ -21,7 +21,7 @@ function App() {
           element={<HomePage state={false} state2={true} />}
         />
 
-        {/* <Route path="/aboutus" element={<Aboutus />} /> */}
+        <Route path="/aboutus" element={<Aboutus />} />
         <Route path="*" element={<Pagenotfound />} />
         <Route path="/Our-Team" element={<Team />} />
         <Route path="/Events" element={<Events />} />

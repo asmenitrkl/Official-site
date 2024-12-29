@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500;900&family=Roboto:wght@900&display=swap");
+@import './colors.css';
 
 .bgHeading {
   position: relative;
@@ -9,9 +10,10 @@
   width: 100%;
   height: 70vh;
 }
+
 .bgHeading h1 {
   font-size: 6rem;
-  color: white;
+  color: var(--color-white);
   position: absolute;
   left: 50%;
   top: 50%;
@@ -19,24 +21,26 @@
   font-family: "Montserrat";
   font-weight: 900;
 }
+
 .bg {
-   
   width: 100%;
-  padding: 5em 0;
+  padding: 5em 2em;
   display: flex;
   flex-direction: row;
-   
-} 
+  flex-wrap: wrap;
+  justify-content: center;
+}
 
-.aboutUsContent { 
+.aboutUsContent {
   display: flex;
   font-family: "Montserrat", sans-serif;
   margin: 0 6vmax;
   justify-content: center;
   align-items: center;
   width: 100%;
-  color: white;
+  color: var(--color-white);
   text-align: justify;
+  padding: 2em 0;
 }
 
 .aboutUsContent h1 {
@@ -53,18 +57,19 @@
   position: relative;
   font-size: 1.5vw;
   display: flex;
-  flex-direction: row; 
-   width: 40%;
-   justify-content: center;
-   align-items: center;
+  flex-direction: row;
+  width: 40%;
+  justify-content: center;
+  align-items: center;
+  padding: 2em;
 }
 
-.right_content::before{
+.right_content::before {
   content: "";
-  background-image: url("https://i.postimg.cc/D0m3pHj6/icons8-infinity-100.png");  
+  background-image: url("https://i.postimg.cc/D0m3pHj6/icons8-infinity-100.png");
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: center; 
+  background-position: center;
   position: absolute;
   top: 0;
   left: 0;
@@ -72,25 +77,17 @@
   width: 100%;
 }
 
-
-.bg .right_content .h4_left { 
-  color: white;  
-  padding: 4em 2em;
-}
-
-.bg .right_content .h4_right { 
-  color: white;
+.bg .right_content .h4_left,
+.bg .right_content .h4_right {
+  color: var(--color-white);
   padding: 4em 2em;
 }
 
 .lowerContent {
-  /* border: 2px solid red; */
-  background-color: black;
-   
-  /* width: 100vw; */
-  color: white;
-  /* margin: 4rem 0; */
+  background-color: var(--color-black);
+  color: var(--color-white);
   margin-bottom: 10rem;
+  padding: 2em;
 }
 
 .lowerContent h1 {
@@ -101,25 +98,26 @@
 }
 
 .messageRow {
-   display: flex;
-   flex-direction: row;
-   text-align: justify;
+  display: flex;
+  flex-direction: row;
+  text-align: justify;
+  flex-wrap: wrap;
+  padding: 2em 0;
 }
 
 .facadContent {
   padding: 6vw 4vw;
   width: 50%;
-  color: white;
+  color: var(--color-white);
   font-size: 1vw;
   font-weight: 400;
 }
 
-
-.facadImg{
-  /* border: 2px solid blue; */
+.facadImg {
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding: 2em 0;
 }
 
 .facadImg img {
@@ -133,12 +131,78 @@
 @media (max-width: 950px) {
   .bgHeading h1 {
     font-size: 4rem;
-    left: 30%;
-    top: 50%;
-    transform: translate(-20%, -30%);
+  }
+  .bg {
+    grid-template-columns: 1fr;
+    padding: 2em 1em;
+  }
+  .aboutUsContent {
+    padding: 1em 0;
+  }
+  .aboutUsContent h1 {
+    font-size: 5vw;
+  }
+  .aboutUsContent p {
+    font-size: 3vw;
+  }
+  .bg .right_content {
+    width: 100%;
+    padding: 1em;
+  }
+  .lowerContent h1 {
+    padding: 0 0 20px 5vw;
+    font-size: 5vw;
+  }
+  .facadContent {
+    width: 100%;
+    padding: 4vw 2vw;
+    font-size: 3vw;
+  }
+  .facadImg img {
+    width: 50vmax;
+  }
+}
+
+@media (max-width: 600px) {
+  .bgHeading h1 {
+    font-size: 2rem;
+  }
+  .bgImage {
+    width: 110%;
   }
   .bg {
     display: grid;
     grid-template-columns: 1fr;
+    padding: 1em 0.5em;
+  }
+  .aboutUsContent {
+    padding: 1em 0;
+    padding-right: 10%;
+  }
+  .aboutUsContent h1 {
+    font-size: 5vw;
+  }
+  .aboutUsContent p {
+    font-size: 3vw;
+  }
+  .bg .right_content {
+    width: 100%;
+    padding: 1em;
+  }
+  .lowerContent h1 {
+    padding-bottom: -10%;
+    font-size: 7vw;
+  }
+  .facadContent {
+    width: 100%;
+    padding: 4vw 1vw;
+    font-size: 3vw;
+  }
+  .facadImg img {
+    width: 50vmax;
+  }
+  .facadImg h4 {
+    padding-top: 5%;
+    padding-right: 10%;
   }
 }

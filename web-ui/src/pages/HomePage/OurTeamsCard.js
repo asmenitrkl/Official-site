@@ -18,19 +18,7 @@ const OurTeamsCard = () => {
           <div className="team-content">
             <h1 className="homeHeader">OUR TEAM</h1>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic
-              sapiente excepturi aliquid exercitationem voluptate? Ab,
-              recusandae sit? Consectetur, dolore! Culpa officiis accusamus
-              expedita quo numquam. Nihil dolorum sint modi, odit est similique,
-              numquam excepturi alias eius reprehenderit minima, tempore
-              consectetur consequuntur laborum laudantium quam eaque illum
-              pariatur nesciunt sequi ab sit. Quibusdam sunt praesentium
-              eveniet! Illum quasi aperiam veniam quo voluptatum recusandae
-              mollitia officia vitae, dignissimos odit natus beatae quibusdam,
-              facere necessitatibus vero amet molestiae qui ad dolorum sed
-              numquam cupiditate tempore. Quod cupiditate, quas sit quos autem,
-              cum minus id natus voluptas temporibus, eum voluptatibus aut
-              magnam reprehenderit ullam.
+            We have three broad team divisions in our section which provide hands-on experience and knowledge to be industry ready. These teams are "Team BlueStreak", "Team Blueprint" & "Team Bluebird". Team BlueStreak focuses on manufacturing the human powered vehicle for ASME's annual HPVC competition, Team Blueprint is responsible for creating 3D Printed models for ASME's IAM3D Challenge, and lastly, Team Bluebird focuses on ASME's XRC and sustainability innovation challenges.
             </p>
             <div className="teams-btn">
               <button onClick={() => navigate("/Our-Team")}>Know Us</button>

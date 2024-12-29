@@ -56,7 +56,7 @@ const Header = ({ isScrolled }) => {
               </li>
               <li className="nav-item">
                 <NavLink to="/projects" className="nav-link">
-                  Projects
+                  Our Teams
                 </NavLink>
               </li>
               <li className="nav-item">
@@ -71,7 +71,7 @@ const Header = ({ isScrolled }) => {
               </li>
               <li className="nav-item">
                 <NavLink to="/Our-Team" className="nav-link">
-                  Our Team
+                  Members
                 </NavLink>
               </li>
             </ul>
