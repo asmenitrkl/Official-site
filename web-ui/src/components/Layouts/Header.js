@@ -1,5 +1,6 @@
 import React from "react";
 import { NavLink, Link, useLocation } from "react-router-dom";
+import  Logo  from "../../assets/White_NO BG.png";
 
 const Header = ({ isScrolled }) => {
   const location = useLocation();
@@ -18,8 +19,9 @@ const Header = ({ isScrolled }) => {
           <Link to="#" className="navbar-brand">
             <div className="overlay-div">
               <img
-                src="https://i.postimg.cc/RVCw6ktN/Whats-App-Image-2023-12-12-at-4-12-10-PM.jpg"
+                src={Logo}
                 alt="asme-logo"
+                style={{backgroundColor: "inherit"}}
               />
             </div>
           </Link>
