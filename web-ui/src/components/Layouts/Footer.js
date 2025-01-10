@@ -1,13 +1,14 @@
 import React from "react";
+import  Logo  from "../../assets/White_NO BG.png";
 
 const Footer = () => {
   return (
     <div className="footer">
       <div className="footer-content-img">
         <img
-          src="https://i.postimg.cc/BvrvzyqT/ASME-NIT-Rourkela-Student-Section-Black.png"
+          src={Logo}
           alt="ASME Logo"
-          style={{ width: "25%" }}
+          style={{ width: "25%",backgroundColor: "transparent" }}
         />
         <img
           src="https://i.postimg.cc/ncFDsQJ9/NITR-LOGO-with-SAC-Black-1.png"
